@@ -1,0 +1,52 @@
+{
+    "page.html": {
+        "style.css":
+        "config.json": [
+            "script.js",
+            "init.js"
+        ]
+    }
+}
+
+jLoads(
+    {
+      "/form/field/text.css",
+      "/form/field/email.css",
+      "/form/field/submit.css",
+      "newsletter.html": [
+        "submit.js"
+      ]
+    }
+);
+  {
+    "/form/field/text.css",
+    "/form/field/email.css",
+    "/form/field/submit.css",
+    "newsletter.html": [
+        "submit.js"
+    ]
+  }
+
+jLoads("jloads.json").to("#form");
+
+
+jLoads("jloads.json").event("cursor","left")).to("#slide");
+jLoads("jloads.json").event("DOM","loaded").to("body");
+jLoads("jloads.json").event("URL","#a").to("#first_tab");
+
+cursor("left", jLoads("jloads.json").to("#slide") );
+
+jLoads("jloads.json").event( cursor("left") ).to("#slide");
+jLoads("jloads.json").event( DOM("loaded") ).to("body");
+jLoads("jloads.json").event( URL("#a") ).to("#first_tab");
+
+jLoads("jloads.json").url("#a").to("#tab_a");
+jLoads("jloads.json").url("#a").to("#tab_b");
+
+
+
+  .on("submit").to("#form")
+
+
+
+jRoutes.event("click").from()
